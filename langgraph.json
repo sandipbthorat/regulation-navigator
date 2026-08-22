@@ -1,0 +1,8 @@
+{
+  "dependencies": ["."],
+  "graphs": {
+    "regulatory_navigator": "./src/regulation_navigator/graph.py:graph"
+  },
+  "env": ".env"
+}
+

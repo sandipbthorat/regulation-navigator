@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=75", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "regulation-navigator"
+version = "0.1.0"
+description = "Cited medical-device software regulatory classification with LangGraph and hybrid RAG"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = [
+  "langgraph>=1.0,<2",
+  "langchain-core>=1.0,<2",
+  "langchain-chroma>=1.0,<2",
+  "langchain-openai>=1.0,<2",
+  "chromadb>=1.0,<2",
+  "rank-bm25>=0.2.2,<1",
+  "pydantic>=2.10,<3",
+  "python-dotenv>=1.0,<2",
+  "pypdf>=5.0,<7",
+  "pandas>=2.2,<4",
+  "streamlit>=1.48,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "moviepy>=2.2,<3",
+  "pytest>=8.3,<10",
+  "pytest-cov>=6,<8",
+  "ruff>=0.12,<1",
+]
+
+[project.scripts]
+regnav = "regulation_navigator.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
+testpaths = ["tests"]

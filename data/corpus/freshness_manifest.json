@@ -1,0 +1,28 @@
+{
+  "reviewed_at": "2026-08-22",
+  "review_cadence": "Monthly review of every indexed source family",
+  "freshness_sla_days": 30,
+  "critical_update_sla": "One business day for a known repeal, supersession, safety alert, or material enforcement change",
+  "source_of_truth_owner": "The issuing authority owns the official source; the project maintainer owns the indexed snapshot and review log.",
+  "reviewed_source_keys": [
+    "fda_device_definition",
+    "fdca_520o",
+    "fda_device_software_policy",
+    "fda_cds",
+    "fda_general_wellness",
+    "fda_mdds",
+    "fda_premarket_software",
+    "fda_ots",
+    "fda_cybersecurity",
+    "fda_ai_lifecycle",
+    "fda_ai_pccp",
+    "fda_qmsr",
+    "iec_62304",
+    "iso_14971",
+    "imdrf_n10",
+    "imdrf_n12",
+    "imdrf_n23",
+    "imdrf_n41",
+    "eu_mdr_rule11"
+  ]
+}

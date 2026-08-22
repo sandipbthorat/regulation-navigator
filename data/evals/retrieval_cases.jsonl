@@ -1,0 +1,15 @@
+{"id":"exact-rule-11","query":"How does EU MDR Rule 11 classify software supplying information for therapeutic decisions?","expected_source_keys":["eu_mdr_rule11"],"should_refuse":false}
+{"id":"exact-520o","query":"Which software functions are excluded by FD&C Act section 520(o)?","expected_source_keys":["fdca_520o"],"should_refuse":false}
+{"id":"iec-safety-classes","query":"What lifecycle framework uses medical device software safety classes A B and C?","expected_source_keys":["iec_62304"],"should_refuse":false}
+{"id":"iso-risk","query":"What standard connects software hazards, risk controls, and residual risk?","expected_source_keys":["iso_14971"],"should_refuse":false}
+{"id":"imdrf-matrix","query":"Which IMDRF framework combines significance of information with condition severity?","expected_source_keys":["imdrf_n12"],"should_refuse":false}
+{"id":"non-device-cds","query":"Can a physician independently review the basis of a clinical decision support recommendation?","expected_source_keys":["fda_cds"],"should_refuse":false}
+{"id":"mdds-data-only","query":"Software only transfers stores formats and displays medical device data without analysis","expected_source_keys":["fda_mdds"],"should_refuse":false}
+{"id":"cybersecurity","query":"FDA secure product development and cybersecurity premarket documentation for connected medical devices","expected_source_keys":["fda_cybersecurity"],"should_refuse":false}
+{"id":"ai-pccp","query":"Predetermined change control plan for planned AI-enabled device software modifications","expected_source_keys":["fda_ai_pccp"],"should_refuse":false}
+{"id":"qmsr","query":"What quality management requirements apply under 21 CFR Part 820 QMSR?","expected_source_keys":["fda_qmsr"],"should_refuse":false}
+{"id":"samd-definition","query":"Definition of software as a medical device that performs its purpose independently of hardware","expected_source_keys":["imdrf_n10"],"should_refuse":false}
+{"id":"premarket-documentation","query":"FDA recommended documentation in a premarket submission for a device software function","expected_source_keys":["fda_premarket_software"],"should_refuse":false}
+{"id":"ots-components","query":"Hazard analysis for off-the-shelf third-party software in a medical device","expected_source_keys":["fda_ots"],"should_refuse":false}
+{"id":"out-of-domain-recipe","query":"How do I bake a sourdough loaf?","expected_source_keys":[],"should_refuse":true}
+{"id":"unsupported-hipaa","query":"Which HIPAA rule sets reimbursement rates for medical billing?","expected_source_keys":[],"should_refuse":true}
