@@ -4,6 +4,9 @@ A runnable LangChain/LangGraph MVP that screens one medical-software function,
 retrieves source-linked regulatory evidence, validates citation lifecycle metadata,
 and returns a structured preliminary assessment.
 
+**Live application:** https://medical-regulation-navigator.streamlit.app  
+**Source repository:** https://github.com/sandipbthorat/regulation-navigator
+
 **My RAG app helps medical-device regulatory, quality, and software professionals answer software-classification and applicable-requirement questions from 21 curated, English-language FDA, U.S. statutory, EU MDR, IMDRF, IEC, and ISO evidence cards in a Streamlit application with ≥95% claim-level faithfulness and p95 latency ≤5 seconds.**
 
 The application is designed for medical-device quality, regulatory, and software
@@ -204,9 +207,10 @@ expanded before production use.
 - Evaluation report: [`docs/EVALUATION_REPORT.md`](docs/EVALUATION_REPORT.md)
 - Full handout response: [`docs/PROJECT_SUBMISSION.md`](docs/PROJECT_SUBMISSION.md)
 
-The repository is ready to publish, but this environment has no GitHub CLI and no
-configured remote. Add the chosen GitHub repository as `origin` and push `main`, or
-upload the generated ZIP submission package through GitHub’s web interface.
+The public repository is available at
+[`sandipbthorat/regulation-navigator`](https://github.com/sandipbthorat/regulation-navigator),
+and the deployed application is available at
+[`medical-regulation-navigator.streamlit.app`](https://medical-regulation-navigator.streamlit.app).
 
 ## Deliberate limitations
 

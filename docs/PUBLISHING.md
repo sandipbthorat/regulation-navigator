@@ -1,15 +1,12 @@
 # Final Publishing Checklist
 
-All project and submission files are complete locally. Two account-bound actions remain because this workspace has neither a GitHub remote nor a connected Google Drive destination.
+All project and submission files are complete locally. The public application and repository are published. The Google Docs upload remains account-bound because this workspace has no connected Google Drive destination.
 
 ## GitHub
 
-1. Create or choose the repository and decide whether it should be public or private.
-2. From the project root, add the remote: `git remote add origin <repository-url>`.
-3. Push the prepared `main` branch: `git push -u origin main`.
-4. Paste the resulting repository link into the submission form.
-
-The prepared ZIP can also be uploaded through GitHub’s web interface if command-line access is unavailable.
+- Public repository: https://github.com/sandipbthorat/regulation-navigator
+- Public Streamlit application: https://medical-regulation-navigator.streamlit.app
+- Deployment source: `main` branch, `app.py`
 
 ## Google Docs
 

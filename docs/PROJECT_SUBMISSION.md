@@ -142,7 +142,8 @@ regnav audit-corpus
 - Project overview, datasets, prompts, iterations, and learnings: complete in this document.
 - Google Docs-ready `.docx`: generated from this content and visually verified as a separate artifact.
 - Demo script and ≤5-minute video artifact: included in the submission package.
-- GitHub assets/link: local assets are ready; publishing requires an authenticated GitHub destination and repository visibility choice.
+- Public GitHub repository: https://github.com/sandipbthorat/regulation-navigator
+- Public application: https://medical-regulation-navigator.streamlit.app
 
 ## Limitations and required human review
 
