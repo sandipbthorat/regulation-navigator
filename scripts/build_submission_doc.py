@@ -227,8 +227,14 @@ def build_document(output: Path) -> None:
     document.core_properties.author = "Regulation Navigator project team"
 
     add_label(document, "Week 2 · RAG application · August 2026")
-    title = document.add_paragraph(style="Title")
-    title.add_run("Medical Device Software\nRegulatory Navigator")
+    title = document.add_paragraph()
+    title.paragraph_format.space_before = Pt(0)
+    title.paragraph_format.space_after = Pt(3)
+    title_run = title.add_run("Medical Device Software\nRegulatory Navigator")
+    title_run.font.name = "Arial"
+    title_run.font.size = Pt(26)
+    title_run.font.bold = False
+    title_run.font.color.rgb = INK
     subtitle = document.add_paragraph()
     subtitle.paragraph_format.space_after = Pt(18)
     run = subtitle.add_run("Project overview, system design, evaluation, and submission record")
@@ -266,7 +272,7 @@ def build_document(output: Path) -> None:
             ["Claim-level faithfulness", "100% on 20 end-to-end cases"],
             ["Retrieval quality", "100% Recall@5 · 0.933 MRR · 0.951 nDCG@5"],
             ["Refusal accuracy", "100% on supported and unsupported queries"],
-            ["Latency", "0.004s p50 · 0.005s p95 · target ≤5s"],
+            ["Latency", "0.006s p50 · 0.008s p95 · target ≤5s"],
         ],
         [4.25, 2.25],
     )
@@ -442,7 +448,7 @@ def build_document(output: Path) -> None:
             ["Retrieval Recall@5", "100%", "Relevant source family in top five"],
             ["MRR / nDCG@5", "0.933 / 0.951", "Rank sensitivity beyond simple recall"],
             ["Refusal accuracy", "100%", "Supported vs. unsupported query gate"],
-            ["p50 / p95 latency", "0.004s / 0.005s", "p95 target ≤5s; cold load ≈0.257s"],
+            ["p50 / p95 latency", "0.006s / 0.008s", "p95 target ≤5s"],
         ],
         [2.15, 1.25, 3.1],
     )
@@ -499,6 +505,12 @@ def build_document(output: Path) -> None:
 
     add_page_break(document)
     document.add_heading("Reproduction and handoff", level=1)
+    add_callout(
+        document,
+        "Published project",
+        "Live application: https://medical-regulation-navigator.streamlit.app\n"
+        "Public repository: https://github.com/sandipbthorat/regulation-navigator",
+    )
     add_body(document, "Run the application and release checks from the project root:")
     code = document.add_table(rows=1, cols=1)
     set_fixed_table_layout(code)
@@ -530,7 +542,8 @@ def build_document(output: Path) -> None:
             "21-record source-linked corpus, ingestion CLI, and freshness manifest.",
             "20 classification cases, 15 retrieval/refusal cases, and a generated evaluation report.",
             "This Google Docs-ready project document, demo script, and ≤5-minute MP4 walkthrough.",
-            "Repository contents ready for GitHub; publishing requires an authenticated destination and visibility choice.",
+            "Public repository: https://github.com/sandipbthorat/regulation-navigator",
+            "Public application: https://medical-regulation-navigator.streamlit.app",
         ],
     )
 

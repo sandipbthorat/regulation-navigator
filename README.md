@@ -11,7 +11,7 @@ and returns a structured preliminary assessment.
 
 The application is designed for medical-device quality, regulatory, and software
 professionals. The current development benchmark measures **100% claim-level
-faithfulness** and **0.005-second p95 assessment latency**; the declared release
+faithfulness** and **0.008-second p95 assessment latency**; the declared release
 targets are at least 95% and at most 5 seconds. These results describe the checked-in
 35-case development sets, not independent validation or real-world legal accuracy.
 

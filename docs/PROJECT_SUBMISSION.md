@@ -86,7 +86,7 @@ The checked-in development benchmark contains 20 end-to-end classification cases
 - Claim-level faithfulness and inline-citation validity: 100%.
 - Retrieval Recall@5: 100%; MRR: 0.933; nDCG@5: 0.951.
 - Refusal accuracy: 100%.
-- Assessment latency: 0.004 seconds p50 and 0.005 seconds p95, below the 5-second target. The first cold index load was approximately 0.257 seconds.
+- Assessment latency: 0.006 seconds p50 and 0.008 seconds p95, below the 5-second target. The first cold index load remained well below the target.
 
 These are curated development results, not independent validation. They show that the software contract is measurable and currently passes its release gates; they do not establish legal correctness on unseen products.
 

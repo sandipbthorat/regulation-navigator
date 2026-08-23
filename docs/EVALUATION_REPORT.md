@@ -8,7 +8,7 @@ Generated from the checked-in classification and retrieval evaluation sets.
 - Retrieval Recall@5: **100.0%**.
 - Retrieval MRR: **0.933**; nDCG@5: **0.951**.
 - Refusal accuracy: **100.0%**.
-- p50/p95 latency: **0.005s / 0.005s** (p95 target ≤5s).
+- p50/p95 latency: **0.006s / 0.008s** (p95 target ≤5s).
 
 ## Classification and citation checks
 
