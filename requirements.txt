@@ -1,4 +1,5 @@
 # Kept in sync with pyproject.toml for classroom/runtime convenience.
+-e .
 langgraph>=1.0,<2
 langchain-core>=1.0,<2
 langchain-chroma>=1.0,<2
